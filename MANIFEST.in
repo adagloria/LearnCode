@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include learncode *.css
+recursive-include learncode *.csv
+recursive-include learncode *.html
+recursive-include learncode *.ico
+recursive-include learncode *.js
+recursive-include learncode *.json
+recursive-include learncode *.md
+recursive-include learncode *.png
+recursive-include learncode *.py
+recursive-include learncode *.svg
+recursive-include learncode *.txt
+recursive-exclude learncode *.pyc
