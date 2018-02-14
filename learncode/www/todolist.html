@@ -4,28 +4,29 @@
     <title>Make TodoList</title>
     <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/spacelab/bootstrap.min.css">
   </head>
   <body>
     <h1>Todo List</h1>
 
+  <div class="container">
     <div>
-      <button onclick="handlers.toggleAll()">Toggle All</button>
+      <button class="btn-primary" onclick="handlers.toggleAll()">Toggle All</button>
     </div>
     
     <div>
-      <button onclick="handlers.addTodo()">Add</button>
+      <button class="btn-primary" onclick="handlers.addTodo()">Add</button>
       <input id="addTodoTextInput" type="text">
     </div>
     
     <div>
-      <button onclick="handlers.changeTodo()">Change Todo</button>
+      <button class="btn-primary" onclick="handlers.changeTodo()">Change Todo</button>
       <input id="changeTodoPositionInput" type="number">
       <input id="changeTodoTextInput" type="text">
     </div>
     
     <div>
-      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+      <button class="btn-primary" onclick="handlers.toggleCompleted()">Toggle Completed</button>
       <input id="toggleCompletedPositionInput" type="number">
     </div>
     
@@ -34,3 +35,4 @@
     <script src="/client.js"></script>
   </body>
 </html>
+</div>
