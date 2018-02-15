@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<!--<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal-label" aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModal-label">Modal Title</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet. consectatrium yuwertyqsdf</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+        </div>
+        
+      </div>
+</div>
+</div>
+
+<div class="container">
+<!--Modal Class Launcher-->
+<div class="row">
+<button type="button" class="col-md-offset-3 col-md-6 btn btn-success" data-toggle="modal" data-target="#myModal">Launch Modal</button>
+
+</div>
+</div>
+
+
+<div class="container">
+
+<div class="alert alert-warning alert-dismissable">
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+<strong>Well done!</strong> You sucessfully read <a href="#" class="alert-link">this important alert</a>
+</div>
+
+<form role="form" class="form-horizontal">
+
+  <div class="form-group has-error has-feedback">
+    <label for="twitter" class="control-label col-md-3">Twitter:</label>
+    <div class="col-md-6">
+    <div class="input-group">
+      <span class="input-group-addon">@</span>
+      <input type="text" name="address" id="address" class="form-control" placeholder="Twitter handle" />
+      </div>
+        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+  </div>
+
+  <div class="form-group has-error has-feedback">
+    <label for="username" class="control-label col-md-3">Username:</label>
+    <div class="col-md-6">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <input type="text" class="form-control" name="username" id="username" />
+      </div>
+      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+  </div>
+
+  <div class="form-group has-error has-feedback">
+		<label for="email" class="control-label col-md-3">Email:</label>
+		<div class="col-md-6">
+			<input type="email" class="form-control" name="email" id="email" placeholder="Email"/>
+			<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+		</div>
+  </div>
+
+  <div class="form-group">
+  		<div class="col-md-offset-3 btn-group" data-toggle="buttons">
+  		<label class="btn btn-primary active">
+  			<input type="radio" name="membership-level" id="gold" checked />Gold
+  		</label>
+  		<label class="btn btn-primary">
+  			<input type="radio" name="membership-level" id="silver" />Silver
+  		</label>
+  		<label class="btn btn-primary">
+  			<input type="radio" name="membership-level" id="bronze" />Bronze
+  		</label>
+  </div>
+
+  <br/>
+
+  <div class="form-group">
+  	<button type="button" class="btn btn-success col-md-4 col-md-offset-3">
+  		Submit
+  	</button>
+  	
+  </div>
+
+</form>
+</div>
+</body>
+</html>

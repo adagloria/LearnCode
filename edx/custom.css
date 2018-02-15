@@ -1,0 +1,14 @@
+.col-md-12 {
+	background-color: lightgrey;
+	margin:50px;
+	font-weight: bold;
+}
+
+h1 {
+	text-align: left;
+	object-position: center;
+	padding:30px;
+}
+body {
+	padding:70px;
+}

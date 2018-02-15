@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Try, don't give up yet</title>
+	<link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<h2>Tabs</h2>
+<!-- Tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li class="active"><a href="#tabs-first" role="tab" data-toggle="tab">First</a></li>
+<li><a href="#tabs-second" role="tab" data-toggle="tab">Second</a></li>
+</ul>
+ 
+<!-- Tab Content -->
+<div class="tab-content">
+<div class="active tab-pane fade in" id="tabs-first">
+<h2>First</h2>
+</div>
+<div class="tab-pane fade" id="tabs-second">
+<h2>Second</h2>
+</div>
+</div>
+</div>
+<h2>Scrollspy</h2>
+<div style="position:relative;">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#scroll-first">First</a></li>
+      <li><a href="#scroll-second">Second</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- Content -->
+  <div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll; position:relative;">
+    <div id="scroll-first">
+      <!-- first block of content -->
+    </div>
+    <div id="scroll-second">
+      <!-- second block of content -->
+    </div>
+  </div>
+</div>
+</body>
+</html>

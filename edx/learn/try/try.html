@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <title>JavaScript and HTML</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="try.css" />
+  <script>
+    function changeTitle() {
+      var title = document.querySelector("#mainTitle");   //Selector API
+      title.innerHTML += "<br>This new <u>title</u> has been changed from JavaScript!";   //DOM API
+    }
+ function changeTitleCSSStyle() {
+      var title = document.querySelector("#mainTitle");
+      title.style.color = 'black';
+      title.style.backgroundColor = "yellow";
+      title.style.border = "5px dashed red";
+    }
+  </script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js"></script>
+</head>
+  <body>
+    <div id="myFunction"></div>
+    <h1 id="mainTitle">My home page</h1> 
+
+    <p>This is an example of interactivity between JavaScript and the HTML content of a document.</p>
+    <button onclick="changeTitle();">Click me to change the title of the page</button>
+    <button onclick="changeTitleCSSStyle();">Click me to change the CSS colors of the title of the page</button>
+    <script src="try.js"></script>
+  </body>
+</html>
