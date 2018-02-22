@@ -41,44 +41,35 @@
  </div>
 
  <script src="scripts/jquery-3.3.1.slim.min.js"></script>
-
  <script>
-        // your answer would go here
-        $(function(){
-            $('.rating-circle').click(function(){
-              var index = $(this).index();
-              var newIndex = index + 1;
-              //var chosen = $('div > div:lt(newIndex)')
-              //chosen.addClass('rating-chosen')
-              //var select = $('this').get(index);
-              //var result = $(select);
-              //console.log(get);
-              //choose.addClass('.rating-chosen');
-              //found.addClass('rating-chosen');
-              $(this).addClass('rating-chosen');
-              //$(this).prevAll().addClass('.rating-chosen')
-              //$()
-            })
-            $('.rating-circle').hover(function(){
-              //var select = $('this').get(index);
-              //var result = $(select);
-              //console.log(index);
-              //choose.addClass('.rating-chosen');
-              $(this).addClass('rating-hover');
-              //$(this).prevAll().addClass('.rating-chosen')
-              //$()
-            })
-            $('.rating-circle').mouseout(function(){
-              //var index = $(this).index();
-              //var select = $('this').get(index);
-              //var result = $(select);
-              //console.log(index);
-              //choose.addClass('.rating-chosen');
-              $(this).removeClass('rating-hover');
-              $()
-            })
-        });
+ $(function(){
+$('.rating-circle').click(function(){
+$(this).addClass('rating-chosen');
+$(this).prevAll().addClass('rating-chosen');
+$(this).nextAll().removeClass('rating-chosen');
+});
+$('.rating-circle').hover(function(){
+$(this).addClass('rating-hover');
+$(this).prevAll().addClass('rating-hover');
+$(this).nextAll().removeClass('rating-hover');
+});
+$('.rating-circle').mouseout(function(){
+$(this).removeClass('rating-hover');
+$(this).prevAll().removeClass('rating-hover');
+$(this).nextAll().removeClass('rating-hover');
+});
+}); 
+</script>
+</body>
+</html>
 
+
+
+        
  </script>
 </body>
 </html>
+
+
+
+        
