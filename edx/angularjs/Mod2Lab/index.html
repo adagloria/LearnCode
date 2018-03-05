@@ -27,7 +27,7 @@
     	</div>
     	<div>
         	<h3>Selected Item</h3>
-        	<pre>{{model.mainDish}}</pre>
+        	<pre>{{model.mainDish.name}}</pre>
    	 	</div>
    	 	<div>
    			<h3>Special Instuctions</h3>
@@ -35,8 +35,9 @@
 		</div>
 		<div>
     		<h3>Order Summary</h3>
-    		<pre>{{model.mainDish}} - {{model.specialInstructions}}</pre>
+    		<pre>{{model.mainDish.name}} {{model.mainDish.price}} - {{model.specialInstructions}}</pre>
 		</div>
+        <select ng-options="character.name for character in people" ng-model="selected"></select>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script src="./app/app.js"></script>
